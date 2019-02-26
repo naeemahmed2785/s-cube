@@ -1,0 +1,10 @@
+git status
+git add .
+git commit -m "what you have done write here"
+git push
+
+then created a Pull request from this branch to dev branch on git hub.
+some one would approve this pull request and will merge it to dev branch.
+then you can download the dev branch using the following command
+git checkout development
+git pull
