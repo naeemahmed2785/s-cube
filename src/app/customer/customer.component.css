@@ -1,0 +1,11 @@
+i {
+    padding-right: 5px;
+}
+/* .form_row {
+display: flex;
+flex-wrap: wrap;
+} */
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
