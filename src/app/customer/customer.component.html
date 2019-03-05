@@ -1,0 +1,47 @@
+  <div class="mb-5 mt-3 align-center">
+    <div class="row">
+      <div class="form-group col-sm-4">
+        <i class="far fa-user"></i><label for="firstName">First Name</label>
+        <input type="text" class="form-control" [(ngModel)]="customer.firstName" placeholder="First Name">
+      </div>
+      <div class="form-group col-sm-4">
+        <i class="far fa-user"></i><label for="lastName">LastName Name</label>
+        <input type="text" class="form-control" [(ngModel)]="customer.surName" placeholder="Last Name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-4">
+        <i class="far fa-envelope"></i><label for="email">Email</label>
+        <input type="email" [(ngModel)]="customer.email" class="form-control" placeholder="Enter Email">
+      </div>
+      <div class="form-group col-sm-4">
+        <i class="fas fa-phone"></i><label for="email">Phone</label>
+        <input type="number" class="form-control" [(ngModel)]="customer.phone" placeholder="Phone Number">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-4">
+        <label for="label-control">Address</label>
+        <input type="text" [(ngModel)]="customer.address" class="form-control" placeholder="House No">
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="label-control">Address 2</label>
+        <input type="text" class="form-control" placeholder="Street name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-4">
+        <label for="city">City</label>
+        <input type="text" [(ngModel)]="customer.town" class="form-control">
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="postcode">Post Code</label>
+        <input type="text" [(ngModel)]="customer.postcode" class="form-control" placeholder="IG1">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-8 text-right">
+      <button class="btn btn-primary" (click)="save()">Submit</button>
+    </div>
+    </div>
+  </div>
