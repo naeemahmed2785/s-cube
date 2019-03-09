@@ -1,4 +1,5 @@
-  <div class="mb-5 mt-3 align-center">
+<div class="mb-5 mt-3 align-center">
+    <app-user-message [Title]="customerTitle" [Message]="customerMessage"></app-user-message>
     <div class="row">
       <div class="form-group col-sm-4">
         <i class="far fa-user"></i><label for="firstName">First Name</label>
@@ -41,7 +42,7 @@
     </div>
     <div class="row">
       <div class="form-group col-sm-8 text-right">
-      <button class="btn btn-primary" (click)="save()">Submit</button>
+        <button class="btn btn-primary" (click)="save()">Submit</button>
     </div>
     </div>
   </div>

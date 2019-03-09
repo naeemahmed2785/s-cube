@@ -8,12 +8,15 @@ import { FooterComponent } from './footer/footer.component';
 import { CustomerComponent } from './customer/customer.component';
 import { RouterModule } from '@angular/router'
 import { CustomerService } from './core/services/customer.service';
+import { UserMessageComponent } from './user-message/user-message.component';
+import { MessageService } from './core/services/messageService';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CustomerComponent
+    CustomerComponent,
+    UserMessageComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,7 @@ import { CustomerService } from './core/services/customer.service';
   ],
   bootstrap: [AppComponent],
   providers: [
-    CustomerService
+    CustomerService, MessageService
   ]
 })
 export class AppModule { }
