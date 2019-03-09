@@ -9,10 +9,10 @@ export class CustomerService {
 
     constructor(private http: Http) { }
     postCustomer(customerObect){
-        console.log(customerObect);
+        let body = JSON.stringify(customerObect);
         let headers = new Headers ({'Content-Type' : 'application/json'});
         let options = new RequestOptions({ headers: headers });
         // this will return an observable
-        return this.http.post('http://localhost:63135/api/customer', {customerObect}, options);
+        return this.http.post('http://localhost:63135/api/customer', body, options);
     }
 }
